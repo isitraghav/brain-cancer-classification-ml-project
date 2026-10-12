@@ -1,0 +1,5 @@
+,model,score
+Stage 1 best (test macro-F1),Gradient Boosting,0.9922242792911928
+Stage 2 best (test macro-F1),SVM,0.7415686274509804
+Stage 2 nested-CV macro-F1 (best procedure),Gradient Boosting,0.7161512463429083
+End-to-end (test macro-F1),two-stage,0.8019554876673569

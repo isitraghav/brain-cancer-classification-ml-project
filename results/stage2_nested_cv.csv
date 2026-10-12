@@ -1,0 +1,5 @@
+,nested-CV macro-F1,sd
+LogReg (L1/L2/EN),0.716,0.092
+SVM,0.664,0.086
+Random Forest,0.654,0.051
+Gradient Boosting,0.716,0.1

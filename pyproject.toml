@@ -1,0 +1,29 @@
+[project]
+name = "brain-tumour-classification"
+version = "0.1.0"
+description = "Two-stage brain tumour classification (benign vs malignant, then glioma subtype) from MRI radiomics"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "idc-index",
+    "pandas",
+    "numpy",
+    "scikit-learn>=1.8",
+    "nibabel",
+    "SimpleITK",
+    "pydicom",
+    "scikit-image",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+    "nbconvert",
+    "jupytext",
+    "pyradiomics",
+    "joblib>=1.6.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+# PyPI wheels stop at Python 3.9 and the sdist is broken; build from the official source.
+pyradiomics = { git = "https://github.com/AIM-Harvard/pyradiomics" }

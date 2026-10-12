@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (large, regenerable via scripts/)
+dataset/raw/
+dataset/features/
+dataset/previews/
+*.nii
+*.nii.gz
+*.dcm
+
+# Model artifacts
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.pkl
+
+# Env / OS / editor
+.env
+.DS_Store
+.idea/
+.vscode/

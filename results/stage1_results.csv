@@ -1,0 +1,6 @@
+model,test macro-F1,95% CI,ROC-AUC,accuracy,balanced acc,recall Benign,recall Malignant,CV macro-F1
+LogReg (L1/L2/EN),1.0,1.00–1.00,1.0,1.0,1.0,1.0,1.0,0.979
+SVM,1.0,1.00–1.00,1.0,1.0,1.0,1.0,1.0,0.984
+Random Forest,0.979,0.95–1.00,0.999,0.982,0.977,0.962,0.991,0.967
+Gradient Boosting,0.986,0.96–1.00,1.0,0.988,0.991,1.0,0.982,0.972
+Soft Voting,1.0,1.00–1.00,1.0,1.0,1.0,1.0,1.0,0.982
