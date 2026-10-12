@@ -68,11 +68,10 @@ repeated stratified cross-validation (mean ± SD) for Stage 2 stability.
 
 ## 8. Expected Outcome
 The system outputs, for each patient's MRI, a benign/malignant decision and (if malignant) a predicted glioma
-subtype with class probabilities. Preliminary results on a held-out test set of 147 patients: Stage 1 macro-F1
-0.99 (95% CI 0.97–1.00) with no malignant tumour missed — expected to be partly inflated by scanner/site
-differences between the two collections, which we analyse explicitly; Stage 2 macro-F1 0.72 under nested
-cross-validation (best: regularised logistic regression, ROC-AUC 0.95; glioblastoma recall 0.99, the rare
-oligodendroglioma is the main error source); end-to-end two-stage macro-F1 0.80 and accuracy 0.94.
+subtype. On the held-out test set of 165 patients: Stage 1 macro-F1 0.99 (gradient boosting), likely partly inflated
+by scanner/site differences between the benign and malignant collections, which we analyse explicitly; Stage 2
+macro-F1 0.74 on the test set (SVM) and 0.72 under nested cross-validation, with the rare oligodendroglioma class
+the main source of error; end-to-end two-stage macro-F1 0.80.
 
 ## 9. References / Dataset Link
 1. Calabrese E. et al. *The University of California San Francisco Preoperative Diffuse Glioma MRI Dataset.*
@@ -80,10 +79,4 @@ oligodendroglioma is the main error source); end-to-end two-stage macro-F1 0.80 
 2. Shapey J. et al. *Segmentation of vestibular schwannoma from MRI, an open annotated dataset and baseline
    algorithm.* Scientific Data 2021. Data: https://doi.org/10.7937/TCIA.9YTJ-5Q73
 3. van Griethuysen J.J.M. et al. *Computational Radiomics System to Decode the Radiographic Phenotype.*
-   Cancer Research 2017 (PyRadiomics).
-4. Bakas S. et al. *Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels and
-   radiomic features.* Scientific Data 2017. Data: https://doi.org/10.7937/K9/TCIA.2017.GJQ7R0EF
-5. Ceccarelli M. et al. *Molecular Profiling Reveals Biologically Discrete Subsets and Pathways of Progression in
-   Diffuse Glioma.* Cell 2016 (TCGA IDH/1p19q labels).
-6. Kujawa A. et al. *Deep learning for automatic segmentation of vestibular schwannoma: a retrospective study
-   from multi-center routine MRI.* Frontiers in Computational Neuroscience 2024. Data: https://doi.org/10.7937/hrzh-2n82
+   Cancer Research 2017 (PyRadiomics). https://doi.org/10.1158/0008-5472.CAN-17-0339
